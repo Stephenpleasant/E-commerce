@@ -14,6 +14,15 @@ if (close) {
     }) 
 }
 
+//contact//
+var textArea = document.querySelector("#textarea");
+var textAreaUnder150 = textArea.slice(0, 150)
+
+if (textArea = 150) {
+    alert("Text above 150")
+}
+// end contact//
+
 var MainImg = document.getElementById('MainImg');
 var smallimg = document.getElementsByClassName('.small-img');
 
@@ -31,4 +40,11 @@ smallimg[2].onClick = function(){
 
 smallimg[3].onClick = function(){
     MainImg.src = smallimg[3].src;
+}
+
+var textArea = document.querySelector("#textarea");
+var textAreaUnder150 = textArea.slice(0, 150)
+
+if (textArea = 150) {
+    alert("Text above 150")
 }

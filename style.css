@@ -6,9 +6,12 @@
     font-family: 'Spartan' sans-serif;
 }
 h1{
-    font-size: 50px;
-    line-height: 64px;
-    color: #222;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        color: #222;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        hyphens: auto;
 }
 h2{
     font-size: 46px;
@@ -48,7 +51,6 @@ button.normal{
 }
 
 body{
-    width: 100%;
     background: #f1f2f5;
 }
 
@@ -62,6 +64,12 @@ body{
     position: sticky;
     top: 0;
     left: 0;
+}
+#header a{
+    text-decoration: none;
+}
+#header a h1{
+    color: #088178;
 }
 #navbar {
     align-items: center;
@@ -127,7 +135,6 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
    height: 90vh;
-   width: 100%;
    background-position: top 25% right 0px;
    padding: 0 80px;
    display: flex;
@@ -178,7 +185,7 @@ body{
 #features .fe-box{
       width: 180px;
       text-align: center;
-      padding: 25px 15px;
+      padding: 25px 0
       
 }
 #features .fe-box img{
@@ -310,8 +317,8 @@ body{
 }
 #sm-banner{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* justify-content: space-between;l
+    flex-wrap: wrap; */
 }
 #sm-banner .banner-box{
     display: flex;
@@ -440,8 +447,8 @@ button.white{
     background-color: #088178;
     color: #fff;
     white-space: nowrap;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 }
 footer{
     display: flex;
@@ -703,7 +710,7 @@ footer .copyright{
  }
 #form-details  form input,
  #form-details form textarea{
-    width: 100%;
+    width: 80%;
     padding: 12px 15px;
     outline: none;
     margin-bottom: 20px;
@@ -861,6 +868,117 @@ footer .copyright{
     border: 1px solid #e2e9e1;
     padding: 10px;
     font-size: 13px;
+}
+/* Updated media query for tablets */
+@media (max-width: 768px) {
+    .section-p1 {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #navbar {
+        padding: 10px;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 20px;
+        background-position: top 30% right 30%;
+    }
+
+    #features {
+        justify-content: center;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+        margin-bottom: 20px;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 28%;
+    }
+
+    #newsletter .form {
+        width: 70%;
+    }
+}
+
+/* Updated media query for mobile devices */
+@media (max-width: 477px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    #features .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #product1 .pro {
+        width: 100%;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+    }
+
+    #newsletter {
+        padding: 40px 20px;
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+
+    footer .copyright {
+        text-align: start;
+    }
 }
 
 @media (max-width:799px) {
@@ -1126,4 +1244,5 @@ button.normal {
         width: 100%;
         padding: 20px;
     }
+  
 }
