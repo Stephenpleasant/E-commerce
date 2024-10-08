@@ -19,7 +19,7 @@
                   <li><a href="blog.html">Blog</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="contact.html">Contact</a></li>
-                  <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                  <li id="lg-bag"><a href="cart.html"><i class="fa-regular fa-cart-shopping"></i><span id="cart-count">0</span></a></li>
                   <a href="#" id="close"><i class="far fa-times"></i></a>
              </ul>
         </div>
@@ -82,7 +82,24 @@
             <div class="pro">
                 <img src="cloth01.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
+                    <h2>Flowers</h2>
+                    <h5>Cartoon Astronut T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$58</h4>
+                </div>
+                <button onclick="addToCart(1, 'Flowers', 58.00, 'cloth01.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="pro">
+                <img src="cloth01.jpg" alt="">
+                <div class="des">
+                    <h2>adidas</h2>
                     <h5>Cartoon  Astronut T-shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -94,13 +111,13 @@
                     </div>
                     <h4>$78</h4>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                <button onclick="addToCart(1, 'adidas', 78.00, 'cloth01.jpg')">Add to Cart</button>
             </div>
 
             <div class="pro">
                 <img src="cloth02.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
+                    <h2>adidas</h2>
                     <h5>Cartoon  Astronut T-shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -112,13 +129,14 @@
                     </div>
                     <h4>$78.00</h4>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                <button onclick="addToCart(1, 'adidas', 78.00, 'cloth02.jpg')">Add to Cart</button>
+               
             </div>
 
             <div class="pro">
                 <img src="cloth06.webp" alt="">
                 <div class="des">
-                    <span>Retro Fairy</span>
+                    <h2>Retro Fairy</h2>
                     <h5>Vintage Remake Plaid Puff Sleeve Tea Dress</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -130,13 +148,14 @@
                     </div>
                     <h4>$86.00</h4>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                <button onclick="addToCart(1, 'Retro Fairy', 86.00, 'cloth06.webp')">Add to Cart</button>
+               
             </div>
 
             <div class="pro">
                 <img src="cloth04.webp" alt="">
                 <div class="des">
-                    <span>Adelina Gown</span>
+                    <h2>Adelina Gown</h2>
                     <h5>Leoce Luxury</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -148,13 +167,13 @@
                     </div>
                     <h4>$88.00</h4>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                <button onclick="addToCart(1, 'Adelina Gown', 88.00, 'cloth04.webp')">Add to Cart</button>
             </div>
 
             <div class="pro">
                 <img src="cloth06jpg.jpg" alt="">
                 <div class="des">
-                    <span>Emerald Gown</span>
+                    <h2>Emerald Gown</h2>
                     <h5>Emerald green layered dress.</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -166,13 +185,13 @@
                     </div>
                     <h4>£ 310.89</h4>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                <button onclick="addToCart(1, 'Emerald Gown', 310.00, 'cloth06jpg.jpg')">Add to Cart</button>
             </div>
 
             <div class="pro">
                 <img src="cloth07.webp" alt="">
                 <div class="des">
-                    <span>Retro Fairy</span>
+                    <h2>Flead Fairy</h2>
                     <h5> Handmade Retro Princess off Shoudler From Evening Dress Ball Gown</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -185,13 +204,13 @@
                     </div>
                     <h4>$102.00</h4>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                <button onclick="addToCart(1, 'Flead Fairy', 102.00, 'cloth07.webp')">Add to Cart</button>
             </div>
 
             <div class="pro">
                 <img src="cloth08.webp" alt="">
                 <div class="des">
-                    <span>Retro Fairy</span>
+                    <h2>Retro Fairy</h2>
                     <h5>Dreamy Retro Princess Puff Sleeves Prom Evening Dress Ball Gown</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -203,13 +222,13 @@
                     </div>
                     <h4>$62.50</h4>
                 </div>
-                <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                <button onclick="addToCart(1, 'Retro Fairy', 62.00, 'cloth08.webp')">Add to Cart</button>
             </div>
 
             <div class="pro">
                 <img src="cloth09.webp" alt="">
                 <div class="des">
-                    <span>Retro Fairy</span>
+                    <h2>Retro Gown</h2>
                     <h5>Custom Made Cotton Long Sleeves Regency Dress</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -221,7 +240,7 @@
                     </div>
                     <h4>$88.00</h4>
                 </div>
-                <a href="#"><i class="fa-duotone fa-cart-shopping cart"></i></a>
+                <button onclick="addToCart(1, 'Retro Gown', 88.00, 'cloth09.webp')">Add to Cart</button>
             </div> 
         </div>
     </div>
@@ -482,6 +501,7 @@
                     <p>0 2023, pleasant E commerce website</p>
                    </div>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
